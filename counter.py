@@ -17,13 +17,18 @@ def main() :
     
     while True:
         #wait for a request from the link-counting client
-        message = socket.recv()
+        message = socket.recv_json()
         print("Recieved request: %s" % message)
         
         # do the work of translating the JSON into a usable list, 
         # counting duplicates, creating a map, and converting that map to a JSON object to send back.
-    
-        #TO DO
         
-        # Send the completed map back to the client as a JSON object
-        socket.send()
+        links_list = message["links"]
+        #create the map to send
+        map = {}
+        # count duplicates
+        for i in links_list:
+            map[i] = links_list.count(i)
+        
+        # convert the map to JSON and send the completed map back to the client as a JSON object
+        socket.send_json(map)
