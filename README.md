@@ -48,10 +48,6 @@ These can be edited to change:
 
 FULL EXAMPLE REQUESTING PROGRAM:
 
-# client.py written by Christopher Ball to test
-# the microservice for Ashley McLemore's List-Counting project
-# for OSU CS 391 Summer Term 2022.
-
 import zmq
 
 FINAL_SOCKET_START = "tcp://localhost:62243"
@@ -75,4 +71,5 @@ def main():
 
     socket.send_json(END_REQUEST)
 
-UML:
+UML:![UML](https://user-images.githubusercontent.com/102987469/180592804-e41224c4-dfc1-44bd-84f7-23cb5d23d862.jpg)
+
