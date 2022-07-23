@@ -19,7 +19,7 @@ request = {"links": ["one", "one", "two", "three", "two", "four"]}
     print("Sending request %s" % request)
     socket.send_json(request)
 
-HOW TO RECIEVE DATA FROM THE MICROSERVICE:
+HOW TO RECEIVE DATA FROM THE MICROSERVICE:
 1) The microservice will count the duplicate links and send back JSON of the form 
 {"link_here" : int_number_of_occurrences, "link_two_here : int_number_of_occurrences, etc...}
 2) This data can be received using a socket.recv_json() call.
