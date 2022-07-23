@@ -55,12 +55,12 @@ END_REQUEST = {"links": "complete"}
 
 
 def main():
+
     # set up the zmq socket.
     print("Connecting to server...")
     context = zmq.Context()
     socket = context.socket(zmq.REQ)
     socket.connect(FINAL_SOCKET_START)
-
     # send a request to the server (a list in JSON form)
     request = {"links": ["one", "one", "two", "three", "two", "four"]}
     print("Sending request %s" % request)
