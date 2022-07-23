@@ -51,6 +51,7 @@ FULL EXAMPLE REQUESTING PROGRAM:
 import zmq
 
 FINAL_SOCKET_START = "tcp://localhost:62243"
+
 END_REQUEST = {"links": "complete"}
 
 
