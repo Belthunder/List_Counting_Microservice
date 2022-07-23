@@ -71,5 +71,6 @@ def main():
 
     socket.send_json(END_REQUEST)
 
-UML:![UML](https://user-images.githubusercontent.com/102987469/180592804-e41224c4-dfc1-44bd-84f7-23cb5d23d862.jpg)
+UML:
+![UML](https://user-images.githubusercontent.com/102987469/180592804-e41224c4-dfc1-44bd-84f7-23cb5d23d862.jpg)
 
