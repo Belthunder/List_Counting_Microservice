@@ -38,3 +38,5 @@ def main():
 
         # convert the map to JSON and send the completed map back to the client as a JSON object
         socket.send_json(counting)
+
+    socket.close()
